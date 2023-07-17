@@ -1,11 +1,16 @@
-function RegForm () {
+import {Form, Button, Input, Container} from "../components/components";
+
+function RegistrationForm () {
     return (
-        <div>
-            <form>
-                <input type='text' placeholder='Логин'></input>
-                <input type='password' placeholder='Пароль'></input>
-            </form>
-        </div>
+        <Container>
+            <Form>
+                <Input type='text' placeholder='Имя'></Input>
+                <Input type='email' placeholder='Email'></Input>
+                <Input type='text' placeholder='Логин'></Input>
+                <Input type='password' placeholder='Пароль'></Input>
+                <Button>Зарегистрироваться</Button>
+            </Form>
+        </Container>
     );
 }
-export {};
+export default RegistrationForm;
